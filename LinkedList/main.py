@@ -8,11 +8,11 @@ import LinkedList
 # myList = LinkedList()
 myList = LinkedList.LinkedList()
 
-myList.append("John")
-myList.append("Mafe")
-myList.append("Delfi")
-myList.append("Al otro")
+myList.add("John")
+myList.add("Mafe")
+myList.add("Delfi")
+myList.add("Al otro")
 
 myList.printIt()
 
-print "length of the list ",  myList.length()
+print "length of the list ",  myList.size()
