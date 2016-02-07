@@ -5,6 +5,7 @@ from Node import *
 class LinkedList:
 	def __init__(self):
 		self.head = None
+		self.tail = None
 
 	def add(self, val):
 
@@ -13,7 +14,6 @@ class LinkedList:
 		if (self.head == None):
 			self.head = tempNode
 
-
 		# Updates the nextNode link of the previous tail
 		if (self.tail != None):
 			self.tail.nextNode = tempNode
@@ -21,20 +21,10 @@ class LinkedList:
 		self.tail = tempNode
 
 
-	# Returns the current tail of the list
-	def getTail(self):
+
 
 	def size(self):
 		pass
 
-
-
-	# iterates over the whole list printing each node
 	def printIt(self):
-
-		node = self.head
-
-		while node != None:
-			node.printIt()
-
-			node = node.nextNode
+		pass
