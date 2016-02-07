@@ -13,14 +13,6 @@ class LinkedList:
 		if (self.head == None):
 			self.head = tempNode
 
-
-		# Updates the nextNode link of the previous tail
-		if (self.tail != None):
-			self.tail.nextNode = tempNode
-
-		self.tail = tempNode
-
-
 	# Returns the current tail of the list
 	def getTail(self):
 
@@ -36,5 +28,4 @@ class LinkedList:
 
 		while node != None:
 			node.printIt()
-
 			node = node.nextNode
