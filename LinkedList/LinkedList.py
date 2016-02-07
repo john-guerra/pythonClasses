@@ -14,7 +14,9 @@ class LinkedList:
 			self.head = tempNode
 
 		tail = getTail()
-		tail.nextNode = tempNode
+		if (tail):
+			tail.nextNode = tempNode
+
 
 	# Returns the current tail of the list
 	def getTail(self):
